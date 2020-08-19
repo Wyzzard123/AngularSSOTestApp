@@ -22,10 +22,10 @@ export class AppComponent {
   }
 
   login(): any {
-
+    this.oauthService.initImplicitFlow();
   }
 
   logout(): any {
-
+    this.oauthService.logOut();
   }
 }
