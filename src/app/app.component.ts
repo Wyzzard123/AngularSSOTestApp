@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularSSOTestApp';
+
+  login(): any {
+
+  }
+
+  logout(): any {
+
+  }
 }
