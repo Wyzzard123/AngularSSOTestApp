@@ -18,13 +18,19 @@ export class AppComponent {
   configureSingleSignOn(): any {
     this.oauthService.configure(authCodeFlowConfig);
     this.oauthService.tokenValidationHandler = new JwksValidationHandler();
-    this.oauthService.loadDiscoveryDocumentAndTryLogin();
+
+    // This does NOT us to the login page whenever we're not logged in, but we can go to the login page using the commented out login
+    // function
+    // this.oauthService.loadDiscoveryDocumentAndTryLogin();
+
+    // This redirects us to the login page whenever we're not logged in.
+    this.oauthService.loadDiscoveryDocumentAndLogin();
   }
 
-  login(): any {
-    this.oauthService.initImplicitFlow();
-  }
-
+  // login(): any {
+  //   this.oauthService.initImplicitFlow();
+  // }
+  //
   logout(): any {
     this.oauthService.logOut();
   }
