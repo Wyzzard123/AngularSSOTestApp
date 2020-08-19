@@ -28,4 +28,11 @@ export class AppComponent {
   logout(): any {
     this.oauthService.logOut();
   }
+
+  // To ensure you can only see the home component if you log in.
+  // This is called a get accessor function.
+  get token(): any {
+    let claims: any = this.oauthService.getIdentityClaims();
+    return claims ? claims : null;
+  }
 }
