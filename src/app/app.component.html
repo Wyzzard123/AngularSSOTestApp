@@ -2,4 +2,5 @@
   <button (click)="login()">Log In</button>
   <button (click)="logout()">Log Out</button>
 </div>
-<router-outlet></router-outlet>
+<!-- Home accessor is only called on successful login due to *ngIf -->
+<router-outlet *ngIf="token"></router-outlet>
