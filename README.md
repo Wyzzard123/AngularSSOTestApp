@@ -2,7 +2,7 @@
 
 Following along tutorial to create single sign on here: https://www.youtube.com/watch?v=AcuzemsJfxA
 
-## Steps
+## CLI Steps
 
 1. Install angular oauth2
    ``` 
@@ -12,4 +12,9 @@ Following along tutorial to create single sign on here: https://www.youtube.com/
    ``` 
    ng serve
    ```
-1. 
+1. Create a new component for the home page
+   ``` 
+   ng generate component home
+   ```
+
+
