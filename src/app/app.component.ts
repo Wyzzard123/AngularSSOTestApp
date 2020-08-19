@@ -33,6 +33,7 @@ export class AppComponent {
   // This is called a get accessor function.
   get token(): any {
     let claims: any = this.oauthService.getIdentityClaims();
+    // If the login was successful, we will return the claims. Otherwise we return null.
     return claims ? claims : null;
   }
 }
