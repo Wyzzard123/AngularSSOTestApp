@@ -16,5 +16,11 @@ Following along tutorial to create single sign on here: https://www.youtube.com/
    ``` 
    ng generate component home
    ```
+   
+1. Demo user name and password for the login and logout buttons:
+   ``` 
+   username: max
+   password: geheim
+   ```
 
 
